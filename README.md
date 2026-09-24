@@ -1,207 +1,174 @@
+# Employee Management
 
-📋 Employee Management
+A full-stack web application for managing employees, built with **React** on the frontend and **Node.js + Express** on the backend.
 
-Full-stack web application for employee management, developed with React on the frontend and Node.js with Express on the backend. Allows CRUD (Create, Read, Update, Delete) operations on a MySQL database.
+The application provides a simple interface for performing **CRUD operations** on employee records stored in a **MySQL** database.
 
-🛠 Technologies Used
+## ✨ Features
 
-Frontend: React, Axios, Bootstrap, SweetAlert2
-Backend: Node.js, Express, MySQL
-Others: Git, GitHub
+* Create new employees
+* View the employee list
+* Edit employee information
+* Delete employees
+* Client-side data validation
+* RESTful API for employee management
+* MySQL database integration
+* Error handling and HTTP response management
+* Responsive user interface with Bootstrap
 
-🚀 Installation and Running
+## 🛠️ Tech Stack
 
-Clone the repository:
+### Frontend
 
-git clone https://github.com/EmiBarrientos/GestionDeEmpleados.git
-cd GestionDeEmpleados
+* React
+* Axios
+* Bootstrap
+* SweetAlert2
 
+### Backend
 
-Set up the server (backend)
+* Node.js
+* Express
+* MySQL
 
-Navigate to the server folder:
+### Tools
 
+* Git
+* GitHub
+* npm
+
+## 🏗️ Project Structure
+
+The project is divided into two main applications:
+
+```text
+Employee-Managment/
+├── client/          # React frontend
+├── server/          # Node.js + Express backend
+├── .gitignore
+├── package-lock.json
+└── README.md
+```
+
+### Frontend
+
+The React application provides the user interface for managing employees and communicates with the backend through HTTP requests using Axios.
+
+### Backend
+
+The Node.js and Express application exposes RESTful endpoints for employee CRUD operations and handles communication with the MySQL database.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+* [Node.js](https://nodejs.org/)
+* npm
+* MySQL
+* Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/EmiBarrientos/Employee-Managment.git
+cd Employee-Managment
+```
+
+### 2. Set up the database
+
+Create a MySQL database named:
+
+```sql
+CREATE DATABASE gestion_empleados;
+```
+
+Then import the database schema located at:
+
+```text
+server/database.sql
+```
+
+Update the database connection configuration in:
+
+```text
+server/db.js
+```
+
+with your local MySQL credentials.
+
+### 3. Start the backend
+
+Open a terminal and navigate to the server directory:
+
+```bash
 cd server
-
-
-Install dependencies:
-
 npm install
-
-
-Configure the MySQL database:
-
-Create a database called gestion_empleados.
-
-Import the SQL schema from the server/database.sql file.
-
-Update the connection credentials in server/db.js.
-
-Run the server:
-
 npm start
+```
 
+The backend will run on:
 
-The server will be available at http://localhost:3001
-.
+```text
+http://localhost:3001
+```
 
-Set up the client (frontend)
+### 4. Start the frontend
 
-Navigate to the client folder:
+Open another terminal and navigate to the client directory:
 
+```bash
 cd client
-
-
-Install dependencies:
-
 npm install
-
-
-Run the client:
-
 npm start
+```
 
+The frontend will run on:
 
-The application will be available at http://localhost:3000
-.
+```text
+http://localhost:3000
+```
 
+## 🔌 API
 
-🎯 Features
+The backend provides RESTful routes for managing employee records.
 
-Frontend:
+The API handles the main CRUD operations:
 
-Form to add, edit, and delete employees.
+| Operation | Description                 |
+| --------- | --------------------------- |
+| Create    | Add a new employee          |
+| Read      | Retrieve employee records   |
+| Update    | Modify an existing employee |
+| Delete    | Remove an employee          |
 
-Table to view the list of employees.
+## 📸 Screenshots
 
-Data validation with SweetAlert2.
+### Home
 
-Backend:
+*Add application screenshot here.*
 
-RESTful API with CRUD routes.
+### Employee Form
 
-MySQL database connection.
+*Add employee form screenshot here.*
 
-Error handling and proper HTTP responses.
+## 🎯 Project Purpose
 
-📸 Screenshots
+This project was developed as a **full-stack learning project** to practice building a web application from frontend to backend and database integration.
 
-Home screen
+It provided hands-on experience with:
 
-Employee form
+* Building REST APIs with Node.js and Express
+* Developing user interfaces with React
+* Connecting a backend application to MySQL
+* Consuming APIs from a React frontend
+* Implementing CRUD operations
+* Organizing a full-stack application into separate frontend and backend layers
 
-🛠 Contributions
+## 👨‍💻 Author
 
-Contributions are welcome. Please follow these steps:
+**Emiliano Barrientos**
 
-Fork the repository.
-
-Create a new branch (git checkout -b feature/new-feature).
-
-Make your changes and commit (git commit -am 'Add new feature').
-
-Push to your branch (git push origin feature/new-feature).
-
-Open a Pull Request.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📋 Gestión de Empleados
-
-Aplicación web full-stack para la gestión de empleados, desarrollada con React en el frontend y Node.js con Express en el backend. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre una base de datos MySQL.
-
-🛠 Tecnologías utilizadas
-
-Frontend: React, Axios, Bootstrap, SweetAlert2
-
-Backend: Node.js, Express, MySQL
-
-Otros: Git, GitHub
-
-🚀 Instalación y ejecución
-1. Clonar el repositorio
-git clone https://github.com/EmiBarrientos/GestionDeEmpleados.git
-cd GestionDeEmpleados
-
-2. Configurar el servidor (backend)
-
-Navegar a la carpeta server:
-
-cd server
-
-
-Instalar dependencias:
-
-npm install
-
-
-Configurar la base de datos MySQL:
-
-Crear una base de datos llamada gestion_empleados.
-
-Importar el esquema SQL desde el archivo server/database.sql.
-
-Actualizar las credenciales de conexión en server/db.js.
-
-Ejecutar el servidor:
-
-npm start
-
-
-El servidor estará disponible en http://localhost:3001.
-
-3. Configurar el cliente (frontend)
-
-Navegar a la carpeta client:
-
-cd client
-
-
-Instalar dependencias:
-
-npm install
-
-
-Ejecutar el cliente:
-
-npm start
-
-
-La aplicación estará disponible en http://localhost:3000.
-
-
-🎯 Funcionalidades
-
-Frontend:
-
-Formulario para agregar, editar y eliminar empleados.
-
-Tabla para visualizar la lista de empleados.
-
-Validación de datos con SweetAlert2.
-
-Backend:
-
-API RESTful con rutas para operaciones CRUD.
-
-Conexión a base de datos MySQL.
-
-Manejo de errores y respuestas HTTP adecuadas.
-
-📸 Capturas de pantalla
-Pantalla de inicio
-
-Formulario de empleados
-
-🛠 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
-
-Haz un fork del repositorio.
-
-Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
-
-Realiza tus cambios y haz commit (git commit -am 'Añadir nueva funcionalidad').
-
-Haz push a tu rama (git push origin feature/nueva-funcionalidad).
-
-Abre un Pull Request.
+* GitHub: [@EmiBarrientos](https://github.com/EmiBarrientos)
+* LinkedIn: [Emiliano Barrientos](https://linkedin.com/in/emiliano-barrientos)
